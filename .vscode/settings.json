@@ -3,17 +3,29 @@
   "editor.tabSize": 2,
   "editor.insertSpaces": true,
   "files.eol": "\n",
+  "editor.codeLens": false,
   "editor.formatOnSave": true,
-  "javascript.preferences.importModuleSpecifierEnding": "js",
-  "typescript.preferences.importModuleSpecifierEnding": "js",
-  "eslint.validate": [
-    "javascript",
-    "typescript",
-    "vue"
-  ],
+  "js/ts.preferences.importModuleSpecifierEnding": "js",
   "eslint.workingDirectories": [
-    "./ui"
+    {
+      "mode": "auto"
+    }
   ],
+  "rust-analyzer.procMacro.ignored": {
+    "napi-derive": [
+      "napi"
+    ]
+  },
+  "rust-analyzer.linkedProjects": [
+    "./packages/rust-decoder/Cargo.toml",
+    "./packages/rust-detector/Cargo.toml",
+  ],
+  "[rust]": {
+    "editor.defaultFormatter": "rust-lang.rust-analyzer",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "explicit"
+    }
+  },
   "[vue]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.codeActionsOnSave": {
@@ -62,12 +74,23 @@
       "source.fixAll": "explicit"
     }
   },
+  "[go]": {
+    "editor.defaultFormatter": "golang.go",
+    "editor.codeActionsOnSave": {
+      "source.fixAll": "always",
+      "source.organizeImports": "always",
+      "quickfix.gopls": "always",
+      "refactor.rewrite.gopls": "always"
+    }
+  },
   "[xml]": {
     "editor.formatOnSave": false
   },
   "files.associations": {
-    "*.yaml": "yaml"
+    "*.yaml": "yaml",
+    "*.css": "tailwindcss",
   },
+  "tailwindCSS.lint.suggestCanonicalClasses": "ignore",
   "python.analysis.autoImportCompletions": true,
   "python.languageServer": "Pylance",
   "python.analysis.typeCheckingMode": "strict",
@@ -77,7 +100,8 @@
   },
   "ruff.nativeServer": true,
   "ruff.fixAll": true,
-  "ruff.configuration": "server/ruff.toml",
+  "ruff.configuration": "./ruff.toml",
   "eslint.debug": false,
-  "typescript.tsdk": "node_modules/typescript/lib"
+  "js/ts.tsdk.path": "node_modules/typescript/lib",
+  "python-envs.defaultEnvManager": "ms-python.python:venv"
 }

@@ -39,3 +39,5 @@ export.py
 .camera.ui
 src_bkp
 requirements.txt
+/internal
+/*.code-workspace
