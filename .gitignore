@@ -38,3 +38,4 @@ export.py
 .venv*
 .camera.ui
 src_bkp
+requirements.txt

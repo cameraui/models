@@ -1,2 +1,0 @@
-ultralytics==8.3.13
-coremltools==8.0.0
