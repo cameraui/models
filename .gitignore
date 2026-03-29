@@ -41,3 +41,5 @@ src_bkp
 requirements.txt
 /internal
 /*.code-workspace
+/downloads
+/*.py
