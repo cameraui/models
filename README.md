@@ -1,4 +1,4 @@
-# camera.ui models
+# camera.ui - Models
 
 Pre-converted inference models hosted for the camera.ui detection plugins, served directly from this repo (weights via Git LFS). Covers object detection, face detection & recognition, license-plate detection & OCR, and CLIP semantic embeddings.
 
